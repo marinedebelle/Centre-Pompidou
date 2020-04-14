@@ -1,0 +1,368 @@
+@import url('index/article_1200_screen.css') screen and (min-width: 1200px);
+@charset;
+	
+@font-face{
+	font-family: 'helvetica-light';
+  	src: url(Helvetica-Light.woff);
+}
+
+/*---------------------------------- BASES ---------------------------------- */
+
+html{
+	height: auto;
+	width: 100vw;
+}
+
+body{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	margin : 0px;
+}
+
+/*---------------------------------- HEADER ---------------------------------- */
+
+header{
+	position: relative;
+	height: 70px;
+	width: 100%;
+	padding-top: 10px;
+	z-index: 100;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	position: absolute;
+	height: 90%;
+	width: 90%;
+	background-image: url(../images/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*---------------------------------- MAIN ---------------------------------- */
+
+main{
+	position: relative;
+	height: auto;
+	width: 94%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.container-all{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.menu{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+a.menu-text{
+	padding: 7px;
+	font-size: 1rem;
+	font-family: 'Roboto Mono', monospace;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+.container-articles{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.article{
+	position: relative;
+	height: auto;
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+
+.titre{
+	position: relative;
+	height: auto;
+	width: 100%;
+}
+
+
+.surlignage{
+	width:25%;
+	height:40px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.surlignage::after{
+	content:"";
+	background-color: red;
+	width:100%;
+	height:100%;
+	transform-origin: right;
+	transform:scaleX(0.5);
+	transition: all 0.3s ease;
+}
+
+.surlignage:hover::after{
+	transform: scaleX(0.2);
+}
+
+
+.surlignage2{
+	width:33.5%;
+	height:40px;
+	display: flex;
+	align-items: flex-start;
+	z-index:2;
+}
+
+.surlignage2::after{
+	content:"";
+	background-color: red;
+	width:75%;
+	height:100%;
+	left:0;
+	transform-origin: left;
+	transform:scaleX(0.5);
+	transition: all 0.3s ease;
+}
+
+.surlignage2:hover::after{
+	transform: scaleX(0.2);
+}
+
+h1{
+	line-height: 2rem;
+	font-family: 'Roboto Mono', monospace;
+	margin:0;
+	position:absolute;
+	font-size: 2rem;
+	color:black;
+	z-index:3;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+
+h2{
+	font-family: 'Roboto Mono', monospace;
+	margin:0;
+	font-size: 1.4rem;
+	width:100%;
+	position:absolute;
+	z-index:3;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+p.intro{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.9rem;
+	margin:0;
+	font-weight: 400;
+	margin-right: 45%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.image-vasarely{
+	position: relative;
+	height: 70%;
+	width: 100%;
+	background-image: url(../images/vasarely.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.image-erika{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/erika.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.texte-colones{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+p.paragraphe{
+	font-family: 'helvetica-light';
+	font-size: 1rem;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+/*---------------------------------- OEUVRES ASSOCIEES ---------------------------------- */
+
+.carre{
+	position: relative;
+	height: 100%;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3%;
+}
+
+h3{
+	font-family: 'Roboto Mono', monospace;
+	margin:0;
+	font-size: 1.4rem;
+	width:100%;
+	position:relative;
+	z-index:3;
+	letter-spacing: 1px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+
+.line{
+	position: relative;
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.petit-carre{
+	position: relative;
+	height: 94%;
+	width: 53%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.images-carre{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.petit-texte{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.7rem;
+	font-weight: 300;
+}
+
+/*---------------------------------- BOUTON ---------------------------------- */
+
+.container-button{
+	position: relative;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.button{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.7rem;
+  	border: none;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 0.8rem;
+  	margin: 4px 2px;
+  	cursor: pointer;
+	background-color: white;
+  	color: black;
+  	border: 1px solid black;
+}
+
+.mobile{
+	display: none
+}
+
+
+/*---------------------------------- FOOTER ---------------------------------- */
+
+footer{
+	position: relative;
+	height: 70px;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	bottom: 0;
+	z-index: 10000;
+}
+
+span{
+	font-size: 1rem;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 2;
+	padding: 7px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,279 @@
+@import url('index/index_736_portrait.css') screen and (max-width: 736px) and (orientation: portrait);
+
+/*---------------------------------- BASES ---------------------------------- */
+
+html{
+	width:100vw;
+}
+
+body{
+	width:100%;
+	position:relative;
+	margin:0;
+
+}
+
+
+/*---------------------------------- ARTICLE ---------------------------------- */
+
+header{
+	position: relative;
+	height: 7vh;
+	width: 100%;
+	padding-top: 10px;
+	z-index: 100;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+article{
+	overflow:hidden;
+	width:calc(100vw / 5);
+}
+
+article.container-preview{
+	width: 100%;
+	height: auto;
+	padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.images-1{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image1.jpg);
+}
+
+.images-2{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image2.jpg);
+}
+
+.images-3{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image3.jpg);
+}
+
+.images-4{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image4.png);
+}
+
+.images-5{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image5.jpg);
+}
+
+.images-6{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image6.png);
+}
+
+.images-7{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image7.png);
+}
+
+.images-8{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image8.jpg);
+}
+
+.images-9{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image9.jpg);
+}
+
+.images-10{
+	width: 100%;
+	height: 65vh;
+	margin-bottom: 5px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/image10.jpg);
+}
+
+.info{
+	background-color: red;
+	margin-top: 10px;
+}
+
+.bandeau{
+	width: 100%;
+	height: auto;
+	background-color: red;
+	padding: 5px;
+}
+
+.line{
+    width: 86%;
+    height: 10px;
+    left: 6%;
+    border-top: solid white 1px;
+    position: absolute;
+}
+
+.bandeau-deroulant{
+	width: 100%;
+	height: auto;
+	background-color: red;
+	display: block;
+}
+
+.container-tarif-horaire{
+	display: flex;
+	flex-direction: row;
+}
+
+.container-tarifs, .container-horaires{
+	display: flex;
+	margin: 10px;
+	width: 50%;
+	flex-direction: column;
+}
+
+span.title, span.subtitle, span.date{
+	color: white;
+}
+
+h1.title-artiste, h2.subtitle-expo, h3.date{
+	letter-spacing: 1.5px;
+}
+
+h3.title-price-1, h3.title-clock{
+	font-size: 15px;
+	color: white;
+	margin:2%;
+}
+
+h2.subtitle-price-2, h2.date, h2.subtitle{
+	font-size: 13px;
+	color: white;
+	font-weight: 100;
+	margin:2%;	
+}
+
+h1.title-artiste{
+	font-size: 30px;
+	color: white;
+	margin:1%;
+}
+
+h1.title-price-1{
+	font-size: 15px;
+	color: white;
+}
+
+h2.subtitle-expo{
+	font-size: 17px;
+	color: white;
+	font-weight: 100;
+	margin:2%;
+}
+
+h3.date{
+	font-size: 15px;
+	color: white;
+	margin:2%;
+}
+
+
+a.link-article{
+	position:relative;
+	width:100%;
+	height:100%;
+	text-decoration: none;
+	color: white;
+}
+
+.menu{
+	position: relative;
+	height: 7%;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+}
+
+a.menu-text{
+	padding: 7px;
+	font-size: 1rem;
+	font-family: 'Roboto Mono', monospace;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+footer{
+	position: relative;
+	height: 7vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+}
+
+span{
+	padding: 7px;
+	font-size: 1rem;
+	font-family: 'Roboto Mono', monospace;
+}
+
+
+
+

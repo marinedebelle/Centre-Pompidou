@@ -1,0 +1,12 @@
+Salut thomas !
+
+
+petit text pour te prévenir concernant la page d'accueil en version mobile, le JS de la version Web fait bugger le JS de la Version Mobile, de plus, nous avions prévu de faire en sorte que quand tu click sur la colonne "vasarely" par exemple, un petit menu déroulant s'ouvrait, ensuite si tu re click, cela devait t'envoyer sur la page article, nous n'avons pas réussi, donc en version ordi tu as un Hover qui déroule le menu déroulant, mais forcement en version mobile le hover le fonctionne pas donc, le menu déroulant ne s'ouvre pas, donc on a décidé de le mettre en display block, et pas en none comme prévu ! 
+
+Pour finir, quand tu arrives sur la version mobile il faut "dÉsactiver" le link "js/1200.js" dans le index.html, le visuel sera normal et non buggé.
+
+J'ai essayé de chercher sur internet pour faire des medias queries avec du js, sans succès !
+
+
+
+Voila !!!

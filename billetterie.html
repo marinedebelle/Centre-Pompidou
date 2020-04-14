@@ -1,0 +1,136 @@
+<html lang="fr">
+<head>    
+  <title>TITRE DE LA PAGE</title>  <!-- IMPORTANT !!  -->
+  <meta name="Content-Type" charset="UTF-8">   <!-- IMPORTANT !! encodage des caractères (permet d'avoir les accent en ligne, pour le FR) -->
+
+  <meta name="copyright" content="All Rights Reserved - AUTEUR" />  <!-- metadonné pour les droits du site, changer l'AUTEUR -->
+  <meta name="Content-Language" content="fr">   <!-- métadonné qui renseigne la langue de la page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- IMPORTANT !! métadonnée qui permet d'adapter la taille d'écran aux mobiles -->
+
+  <meta name="Description" content="Courte description de la page"> <!-- IMPORTANT !! Sujet du site (apparaît en description du site sur google) -->
+
+
+  <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/billetterie.css">
+  <link rel="stylesheet" media="screen and (min-width: 1200px)" href="index/billetterie_1200_screen.css">
+  <link rel="stylesheet" media="screen and (max-width: 736px) and (orientation: portrait)" href="index/billetterie_736_portrait.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!--------------------------------------  HEADER  -------------------------------------->
+	
+	<header>
+		<div class="logo"></div>
+	</header>
+
+<!--------------------------------------  MAIN  -------------------------------------->
+
+
+	<main>
+		<div class="menu">
+			<a class="menu-text" href="agenda.html"> Agenda </a>
+			<span> | </span>
+			<a class="menu-text" href="billetterie.html"> Billetterie </a>
+			<span> | </span>
+			<span> Guide </span>
+		</div>
+
+<!---------------------------- TITRE SURLIGNE  --------------------------->
+	<div class="titre">
+			<div class="surlignage"> 
+				<h1> BILLETTERIE </h1>
+			</div>
+			<div class="surlignage2"> 
+				<h2> DU CENTRE POMPIDOU </h2>
+			</div>
+		</div>
+
+<!---------------------------- ESPACE BILLET  ---------------------------->		<div class="container">
+	
+		<div class="container-left">
+			
+	<div class="info">
+
+			<div class="bandeau">
+				<h1 class="bandeau"> BILLET<br>
+				MUSEE | VUE DE PARIS</h1>
+			</div>
+
+			<div class="bandeau-deroulant">
+				<h1 class="titre-bandeau-deroulant"> Tarif </h1>
+				<h2 class="text-bandeau-deroulant"> Plein | 14€ <br>
+				Réduit | 11€</h2>
+			</div>
+
+		</div>
+	</div>
+
+
+
+		<div class="container-right">
+
+	<div class="info">
+			<div class="bandeau">
+				<h1 class="bandeau"> BILLET<br>
+				VUE DE PARIS</h1>
+			</div>
+
+			<div class="bandeau-deroulant">
+				<h1 class="titre-bandeau-deroulant"> Tarif </h1>
+				<h2 class="text-bandeau-deroulant"> Plein | 14€ <br>
+				Réduit | 11€</h2>
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+<!---------------------------- ESPACE ADHESION  ---------------------->	 
+	<div class="titre">
+				<h1 class="titre-adh"> ADHESION </h1>
+				<h2 class="titre-adh"> ANNUELLE </h2>
+	</div>
+
+	<div class="container-adh">
+		<div class="box1" id="b1">
+			<div class="bandeau-adh"><h1 class="petit-titre-adh">ADHÉSION SOLO 1 AN</h1></div>
+		</div>
+
+
+		<div class="box2" id="b2">
+			<div class="bandeau-adh"><h1 class="petit-titre-adh">ADHÉSION DUO 1 AN</h1></div>
+		</div>
+		<div class="box3" id="b3">
+			<div class="bandeau-adh"><h1 class="petit-titre-adh">ADHÉSION SOLO 2 ANS</h1></div>
+		</div>
+		<div class="box4" id="b4">
+			<div class="bandeau-adh"><h1 class="petit-titre-adh">ADHÉSION DUO 2 ANS</h1></div>
+		</div>
+	</div>
+	
+	</main>
+
+<!--------------------  FOOTER  --------------------->
+	<footer>
+		<span> Newsletter </span>
+		<span> | </span>
+		<a class="menu-text" href="history.html"> A propos </a>
+		<span> | </span>
+		<span> Contacts </span>
+	</footer>
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>   <!-- lien vers la bibliothèque jquery dans le votre dossier js -->
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>  <!-- lien vers la bibliothèque jquery ( qui permet de gérer les courbes de vitesse) -->
+<script type="text/javascript" src="js/billetterie.js"> </script>  <!-- lien vers la page index.js qui contient toutes vos fonctions qui concerne cette page -->
+</body>
+
+</html>

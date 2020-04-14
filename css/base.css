@@ -1,0 +1,29 @@
+:root {   /* permet de rentrer des variables à la racine */
+  --noir: #000000;
+}
+
+::-webkit-scrollbar {    /*permet de cacher la scroll bar sur la droite lorsqu'on scroll */
+display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  margin: 0 auto;
+}

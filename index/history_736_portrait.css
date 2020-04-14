@@ -1,0 +1,344 @@
+@import url('index/history_736_portrait.css') screen and (max-width: 736px) and (orientation: portrait);
+
+/*---------------------------------- BASES ---------------------------------- */
+
+html{
+	width:100vw;
+}
+
+body{
+	width:100%;
+	position:relative;
+	margin:0;
+}
+
+
+/*---------------------------------- HEADER ---------------------------------- */
+
+header{
+	position: relative;
+	height: 7vh;
+	width: 100%;
+	padding-top: 10px;
+	z-index: 100;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.menu{
+	position: relative;
+	height: 7%;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+	margin-top: 10px;
+}
+
+a.menu-text{
+	padding: 7px;
+	font-size: 1rem;
+	font-family: 'Roboto Mono', monospace;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+.titre{
+	position: relative;
+	height: auto;
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+
+.surlignage{
+	width:75%;
+	height:40px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.surlignage::after{
+	content:"";
+	background-color: red;
+	width:100%;
+	height:100%;
+	transform-origin: right;
+	transform:scaleX(0.5);
+	transition: all 0.3s ease;
+}
+
+.surlignage:hover::after{
+	transform: scaleX(0.2);
+}
+
+
+.surlignage2{
+	width:75%;
+	height:40px;
+	display: flex;
+	align-items: flex-start;
+	z-index:2;
+}
+
+.surlignage2::after{
+	content:"";
+	background-color: red;
+	width:100%;
+	height:100%;
+	left:0;
+	transform-origin: left;
+	transform:scaleX(0.5);
+	transition: all 0.3s ease;
+}
+
+.surlignage2:hover::after{
+	transform: scaleX(0.2);
+}
+
+h1{
+	line-height: 2rem;
+	font-family: 'Roboto Mono', monospace;
+	margin:0;
+	position:absolute;
+	font-size: 2rem;
+	color:black;
+	z-index:3;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+
+h2{
+	font-family: 'Roboto Mono', monospace;
+	margin:0;
+	font-size: 1.4rem;
+	width:100%;
+	position:absolute;
+	z-index:3;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+
+
+/*---------------------------------- DATE ---------------------------------- */
+
+
+
+.container-date{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.date-1, .date-2, .date-3, .date-4{
+	border-bottom: solid black 2px;
+	width: 90%;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+}
+
+h2.date{
+	font-size: 0.9rem;
+	color: blue;
+		justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+}
+
+mark{
+	background-color: white;
+	color: red;
+}
+
+.display-date-deroulant, .display-date-deroulant-2, .display-date-deroulant-3, .display-date-deroulant-4{
+	display: none;
+	opacity: 0;
+	width: 100%;
+	height: auto;
+}
+.date-deroulant, .date-deroulant-2, .date-deroulant-3, .date-deroulant-4{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-date{
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/1969.jpg);
+	position: relative;
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 90%;
+	height: 20%;
+}
+
+.img-date-2{
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/1960.jpg);
+	position: relative;
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 90%;
+	height: 20%;
+}
+
+.img-date-3{
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/1970.jpg);
+	position: relative;
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 90%;
+	height: 20%;
+}
+
+.img-date-4{
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/2000.jpg);
+	position: relative;
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 90%;
+	height: 20%;
+}
+
+p.paragraphe-date{
+	height: auto;
+	margin: 10px;
+	font-size: 0.8rem;
+	position: relative;
+	margin-top: 70px;
+	margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1.titre-date{
+    margin-top: 45%;
+    margin-left: 5%;
+	line-height: 1rem;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1rem;
+	color:black;
+	z-index:3;
+	letter-spacing: 1px;
+	font-weight: 700;
+	width: 90%;
+}
+
+/*---------------------------------- LIEU ---------------------------------- */
+
+.titre-loc{
+	position: relative;
+	height: auto;
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 40px;
+}
+
+
+h1.titre-loc{
+	line-height: 2rem;
+	font-family: 'Roboto Mono', monospace;
+	margin:0;
+	font-size: 2rem;
+	color:black;
+	z-index:3;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+h2.subtitle-loc{
+	font-family: 'Roboto Mono', monospace;
+	margin:0;
+	font-size: 1.4rem;
+	width:100%;
+	z-index:3;
+	position: relative;
+	letter-spacing: 1px;
+	padding-left: 10px;
+	font-weight: 300;
+}
+
+.map{
+
+	margin-top: 10%;
+	margin-left: 18px;
+	position: relative;
+	width: 90%;
+	height: 25%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../images/google.png);
+	margin-bottom: 20%;
+}
+
+footer{
+	position: relative;
+	height: 7vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+}
+
+span{
+	padding: 7px;
+	font-size: 1rem;
+	font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

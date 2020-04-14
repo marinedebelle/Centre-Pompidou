@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>    
+  <title>ARTICLE 1</title>  <!-- IMPORTANT !!  -->
+  <meta name="Content-Type" charset="UTF-8">   <!-- IMPORTANT !! encodage des caractères (permet d'avoir les accent en ligne, pour le FR) -->
+
+  <meta name="copyright" content="All Rights Reserved - AUTEUR" />  <!-- metadonné pour les droits du site, changer l'AUTEUR -->
+  <meta name="Content-Language" content="fr">   <!-- métadonné qui renseigne la langue de la page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- IMPORTANT !! métadonnée qui permet d'adapter la taille d'écran aux mobiles -->
+
+  <meta name="Description" content="Courte description de la page"> <!-- IMPORTANT !! Sujet du site (apparaît en description du site sur google) -->
+
+  <link rel="stylesheet" media="screen and (min-width: 1200px)" href="index/article_1200_screen.css">
+  <link rel="stylesheet" media="screen and (max-width: 736px) and (orientation: portrait)" href="index/article_736_portrait.css">
+  <link rel="stylesheet" type="text/css" href="index/base.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!--------------------------------------  HEADER  -------------------------------------->
+
+<header>
+	<div class="logo"></div>
+</header>
+
+<!--------------------------------------  MAIN  -------------------------------------->
+
+<main>
+	<div class="container-all">
+		<div class="menu">
+			<a class="menu-text" href="agenda.html"> Agenda </a>
+			<span> | </span>
+			<a class="menu-text" href="billetterie.html"> Billetterie </a>
+			<span> | </span>
+			<span> Guide </span>
+		</div>
+
+
+	<div class="container-articles">
+		<div class="article">
+
+			<div class="titre">
+				<div class="surlignage"> 
+					<h1> VASARELY </h1>
+				</div>
+				<div class="surlignage2"> 
+					<h2> LE PARTAGE DES FORMES </h2>
+				</div>
+			</div>
+
+			<div class="image-vasarely"></div>
+			<p class="intro"> Découvrez la première grande rétrospective française consacrée à Victor Vasarely, le père de l’art optique.
+			</p>
+
+			<div class="texte-colones">
+				<p class="paragraphe"> Un parcours à la fois chronologique et thématique vous emmène parmi toutes les facettes de son œuvre foisonnant, depuis sa formation dans les traces du Bauhaus jusqu’aux dernières innovations formelles : peintures, sculptures, multiples, intégrations architecturales, publicités, études… 
+				</p>
+
+				<p class="paragraphe"> Au travers de trois cents œuvres, objets et documents, explorez le « continent Vasarely » et la manière dont il a marqué la culture populaire de l’époque, s’inscrivant pleinement dans le contexte scientifique, économique et social des années 1960-1970, et soulignant la place cardinale de l’artiste dans l’imaginaire des Trente Glorieuses.
+				</p>
+			</div>
+
+<!--------------------------------------  BOUTON ORDI  -------------------------------------->
+
+			<div class="container-button ordi">
+				<a class="button" href="#"> ACHETER UN BILLET </a>
+			</div>
+		</div>
+
+<!------------------------------------  OEUVRES ASSOCIEES  ------------------------------------>
+	
+		<div class="carre">
+			<h3> OEUVRES ASSOCIEES </h3>
+			<div class="line">
+				<div class="petit-carre">
+					<img class="images-carre" src="images/vasarely1.jpg">
+					<span class="petit-texte"> Kiruna (1952 - 1962) </span>
+				</div>
+				<div class="petit-carre">
+					<img class="images-carre" src="images/vasarely2.jpg">
+					<span class="petit-texte"> Zèbres (1939 / 1943) </span>
+				</div>
+			</div>
+			<div class="line">
+				<div class="petit-carre">
+					<img class="images-carre" src="images/vasarely3.jpg">
+					<span class="petit-texte"> Meh (2) (1967 - 1968) </span>
+				</div>
+				<div class="petit-carre">
+					<img class="images-carre" src="images/vasarely4.jpg">
+					<span class="petit-texte"> Re.Na II A (1968) </span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--------------------------------------  BOUTON MOBILE  -------------------------------------->
+
+	<div class="container-button mobile">
+		<a class="button" href="#"> ACHETER UN BILLET </a>
+	</div>
+</div>
+
+</main>
+
+
+<!--------------------------------------  FOOTER  -------------------------------------->
+
+<footer>
+		<span> Newsletter </span>
+		<span> | </span>
+		<a class="menu-text" href="history.html"> A propos </a>
+		<span> | </span>
+		<span> Contacts </span>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>   <!-- lien vers la bibliothèque jquery dans le votre dossier js -->
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>  <!-- lien vers la bibliothèque jquery ( qui permet de gérer les courbes de vitesse) -->
+<script type="text/javascript" src="js/index.js"> </script>  <!-- lien vers la page index.js qui contient toutes vos fonctions qui concerne cette page -->
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="fr">
+<head>    
+  <title>AGENDA</title>  <!-- IMPORTANT !!  -->
+  <meta name="Content-Type" charset="UTF-8">   <!-- IMPORTANT !! encodage des caractères (permet d'avoir les accent en ligne, pour le FR) -->
+
+  <meta name="copyright" content="All Rights Reserved - AUTEUR" />  <!-- metadonné pour les droits du site, changer l'AUTEUR -->
+  <meta name="Content-Language" content="fr">   <!-- métadonné qui renseigne la langue de la page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- IMPORTANT !! métadonnée qui permet d'adapter la taille d'écran aux mobiles -->
+
+  <meta name="Description" content="Courte description de la page"> <!-- IMPORTANT !! Sujet du site (apparaît en description du site sur google) -->
+
+  <link rel="stylesheet" media="screen and (min-width: 1200px)" href="index/agenda_1200_screen.css">
+  <link rel="stylesheet" media="screen and (max-width: 736px) and (orientation: portrait)" href="index/agenda_736_portrait.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700" rel="stylesheet">
+</head>
+
+<!--------------------------------------  HEADER  -------------------------------------->
+
+<header>
+	<div class="logo"></div>
+</header>
+
+<!--------------------------------------  MAIN  -------------------------------------->
+
+<main>
+	<div class="container-all">
+		<div class="menu">
+			<a class="menu-text" href="agenda.html"> Agenda </a>
+			<span> | </span>
+			<a class="menu-text" href="billetterie.html"> Billetterie </a>
+			<span> | </span>
+			<span> Guide </span>
+		</div>
+
+		<div class="container-expo-calendar">
+			<div class="titre mobile">
+				<div class="surlignage"> 
+					<h1 class="grand-titre"> CALENDRIER </h1>
+				</div>
+				<div class="surlignage2"> 
+					<h2 class="petit-titre"> DES EXPOSITIONS </h2>
+				</div>
+			</div>
+
+<!--------------------------------------  CALENDRIER  -------------------------------------->
+
+			<div class="calendar">
+				<div class="header">
+					<a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+					<div class="text" data-render="month-year"></div>
+					<a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+				</div>
+				<div class="months" data-flow="left">
+					<div class="month month-a">
+						<div class="render render-a"></div>
+					</div>
+					<div class="month month-b">
+						<div class="render render-b"></div>
+					</div>
+				</div>
+			</div>
+
+<!--------------------------------------  EXPOSITIONS  -------------------------------------->
+			<div class="container-expos">
+				<div class="titre mobile">
+					<div class="surlignage"> 
+						<h1 class="grand-titre"> CALENDRIER </h1>
+					</div>
+					<div class="surlignage2"> 
+						<h2 class="petit-titre"> DES EXPOSITIONS </h2>
+					</div>
+				</div>
+
+				<div class="sous-titre">
+					<h1 class="grand-sous-titre"> EXPOSITIONS </h1>
+					<h2 class="petit-sous-titre"> PERMANENTES </h2>
+				</div>
+
+				<div class="container-expo-perma">
+
+					<div class="container-2-lines">
+						<div class="line-expo">
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo1.png">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> COLLECTIONS MODERNES (1905 | 1965) </span>
+								</div>
+							</div>
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo2.png">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> COLLECTIONS CONTEMPORAINES </span>
+								</div>
+							</div>
+						</div>
+
+						<div class="line-expo">
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo3.jpg">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> HISTOIRE DE L’ATELIER BRANCUSI </span>
+								</div>
+							</div>
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo4.png">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> COLLECTIONS CONTEMPORAINES </span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-2-lines">
+						<div class="line-expo">
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo5.png">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> HISTOIRE DE L’ATELIER BRANCUSI </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="sous-titre">
+					<h1 class="grand-sous-titre"> EXPOSITIONS </h1>
+					<h2 class="petit-sous-titre"> TEMPORAIRES </h2>
+				</div>
+
+				<div class="container-expo-perma">
+
+					<div class="container-2-lines">
+						<div class="line-expo">
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo6.jpg">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> VASARELY </span>
+								</div>
+							</div>
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo7.png">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> SHUNK - KENDER </span>
+								</div>
+							</div>
+						</div>
+
+						<div class="line-expo">
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo8.png">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> ELLSWORTH KELLY </span>
+								</div>
+							</div>
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo10.jpg">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> BIOTOPE </span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container-2-lines">
+						<div class="line-expo">
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo9.png">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> LA FABRIQUE DU VIVANT </span>
+								</div>
+							</div>
+							<div class="carre-expos">
+								<img class="images-expo" src="images/expo11.jpg">
+								<div class="bandeau">
+									<span class="titre-petit-expo"> ERIKA VERZUTTI </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</main>
+
+
+
+<!--------------------------------------  FOOTER  -------------------------------------->
+
+<footer>
+		<span> Newsletter </span>
+		<span> | </span>
+		<a class="menu-text" href="history.html"> A propos </a>
+		<span> | </span>
+		<span> Contacts </span>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+<script src="js/jquery-1.11.3.min.js"></script>   <!-- lien vers la bibliothèque jquery dans le votre dossier js -->
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>  <!-- lien vers la bibliothèque jquery ( qui permet de gérer les courbes de vitesse) -->
+<script type="text/javascript" src="js/calendrier.js"> </script>  <!-- lien vers la page index.js qui contient toutes vos fonctions qui concerne cette page -->
+</body>
+
+</html>
